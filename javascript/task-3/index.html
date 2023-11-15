@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EMI Calculator</title>
+</head>
+<body>
+    <h1>EMI Calculator</h1>
+    <input id="principal" type="number" placeholder="Enter principal amount">
+    <input id="rate" type="number" placeholder="Enter annual interest rate">
+    <input id="tenure" type="number" placeholder="Enter tenure in months">
+    <button onclick="calculateEMI()">Calculate EMI</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateEMI() {
+            var principal = document.getElementById('principal').value;
+            var rate = document.getElementById('rate').value / 1200;
+            var tenure = document.getElementById('tenure').value;
+
+            var emi = (principal * rate * (Math.pow(1 + rate, tenure))) / (Math.pow(1 + rate, tenure) - 1);
+
+            document.getElementById('result').innerHTML = "The EMI is " + emi.toFixed(2);
+        }
+    </script>
+</body>
+</html>

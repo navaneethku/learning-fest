@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSON</title>
+    </head>
+    <body>
+        <h1>People Data</h1>
+        <ul id="peopleList"></ul>
+
+        <script>
+            var peopleListElement = document.getElementById("peopleList");
+  
+            fetch('people.json').then(function (resp) {
+                return resp.json();
+            }).then(function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    var individual = data[i];
+                    var personName = individual.name;
+                    var personAge = individual.age;
+      
+                    var listItemElement = document.createElement("li");
+                    listItemElement.textContent = "Name: " + personName + ", Age: " + personAge;
+      
+                    peopleListElement.appendChild(listItemElement);
+                }
+            }).catch(function (err) {
+                console.error("Something went wrong !");
+                console.error(err);
+            })
+        </script>
+    </body>
+</html>
