@@ -25,11 +25,14 @@
         background-color: #c2d5dc;
         border-color: #c2d5dc;
       }
+      html{
+        scroll-behavior: smooth;
+      }
     </style>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav id="home-section" class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">
         <img src="logo.png" alt="Logo" />
       </a>
@@ -47,10 +50,13 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home-section">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mentors</a>
+            <a class="nav-link" href="#register-section">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mentors-section">Mentors</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Participate</a>
@@ -102,7 +108,7 @@
     </div>
 
     <!-- Form -->
-    <div class="container">
+    <div id="register-section" class="container">
       <h1>Form:</h1>
       <form>
         <div class="form-group">
@@ -162,7 +168,7 @@
     </div>
 
     <!-- Grid Layout -->
-    <div class="container">
+    <div id="mentors-section" class="container">
       <div class="row">
         <!-- Repeat this block for each card -->
         <div class="col-sm-4">
@@ -281,4 +287,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
-j
