@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navaneeth K U - Personal Website</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Your custom CSS file -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navaneeth K U</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="about" class="section">
+      <div class="container text-center">
+        <h2>About Me👤</h2>
+        <p>Name: Navaneeth K U</p>
+        <p>Location: Thrissur, Kerala</p>
+        <!-- Add more details here -->
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-light">
+      <div class="container text-center">
+        <h2>Education🎓</h2>
+        <p>School/College: Christ College of Engineering, Irinjalakuda</p>
+        <p>Year: Final year</p>
+        <!-- Add more details here -->
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="section">
+      <div class="container text-center">
+        <h2>Interests🎨</h2>
+        <p>Interested in: Mobile App Development</p>
+        <!-- Add more details here -->
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <div class="container text-center">
+        <h2>Contact Me📩</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+              required
+            />
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Projects💻</h2>
+        <div class="row">
+          <!-- Project Cards -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">SL Connect</h5>
+                <p class="card-text">
+                  Mobile App Connecting Skilled Labourers with Home owners.
+                </p>
+                <a
+                  href="https://github.com/navaneethku/slconnect"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Snake Game</h5>
+                <p class="card-text">
+                  Simple Snake game with online leaderboard facility.
+                </p>
+                <a
+                  href="https://github.com/navaneethku/snakeGame"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Notable - Note App Design</h5>
+                <p class="card-text">
+                  Highly theme focused and customisable note app figma design.
+                </p>
+                <a
+                  href="https://www.figma.com/proto/G07SldX6Bp29RozFy0cqgY?node-id=0-1&mode=design&t=KvHsiv6neIm3OxAe-6"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Diary App</h5>
+                <p class="card-text">
+                  Diary App created as part of Co-Coder event by TinkerHub
+                </p>
+                <a
+                  href="https://github.com/navaneethku/DiaryApp"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- End of Project Cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <hr />
+    <footer class="footer text-center">
+      <div class="container">
+        <p>&copy; 2023 Navaneeth K U - Personal Website</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <!-- Your custom JavaScript file -->
+  </body>
+</html>
